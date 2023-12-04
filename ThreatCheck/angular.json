@@ -1,5 +1,5 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "../node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -25,9 +25,15 @@
               "src/assets"
             ],
             "styles": [
+              "../ThreatCheck/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../ThreatCheck/node_modules/jquery/dist/jquery.min.js",
+              "../ThreatCheck/node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "../ThreatCheck/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "../ThreatCheck/node_modules/chart.js/dist/chart.js"
+            ]
           },
           "configurations": {
             "production": {
